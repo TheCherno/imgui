@@ -2,11 +2,11 @@ project "ImGui"
     kind "StaticLib"
     language "C++"
     
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+    targetdir (output_dir("bin"))
+    objdir (output_dir("bin-int"))
 
-	files
-	{
+    files
+    {
         "imconfig.h",
         "imgui.h",
         "imgui.cpp",
@@ -19,7 +19,7 @@ project "ImGui"
         "imgui_demo.cpp"
     }
     
-	filter "system:windows"
+    filter "system:windows"
         systemversion "latest"
         cppdialect "C++17"
         staticruntime "On"
