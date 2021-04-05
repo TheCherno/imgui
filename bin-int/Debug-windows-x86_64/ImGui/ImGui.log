@@ -1,0 +1,5 @@
+﻿  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_widgets.cpp
+  ImGui.vcxproj -> Z:\Dev\BitEngine\BitEngine\BitEngine\vendor\ImGui\bin\Debug-windows-x86_64\ImGui\ImGui.lib
